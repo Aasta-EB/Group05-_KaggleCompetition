@@ -1,0 +1,46 @@
+{
+  "assignment": "UCLM Machine Learning NLI midterm 2026/2027",
+  "dataset": "Official Kaggle Contradictory, My Dear Watson CSV files",
+  "train_rows": 12120,
+  "test_rows": 5195,
+  "n_languages": 15,
+  "labels": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "label_counts": {
+    "0": 4176,
+    "1": 3880,
+    "2": 4064
+  },
+  "missing_raw_train": {
+    "id": 0,
+    "premise": 0,
+    "hypothesis": 0,
+    "lang_abv": 0,
+    "language": 0,
+    "label": 0
+  },
+  "duplicate_full_rows": 0,
+  "duplicate_premise_hypothesis_pairs": 0,
+  "distinct_normalized_premises": 8209,
+  "train_rows_in_repeated_premise_groups": 6711,
+  "overlapping_normalized_train_test_premises": 2244,
+  "split_strategy": "GroupShuffleSplit by normalized premise, random_state=42, target validation 20%",
+  "split_train_rows": 9667,
+  "split_validation_rows": 2453,
+  "premise_group_overlap_between_split": 0,
+  "near_duplicate_check": "Sample of at most 200 validation premises; character TF-IDF fit on training only",
+  "preprocessing": "Unicode NFKC + collapse whitespace; negation and premise/hypothesis roles preserved",
+  "near_duplicate_sample_size": 200,
+  "near_duplicate_threshold": 0.95,
+  "near_duplicate_candidates": 1,
+  "missing_raw_test": {
+    "id": 0,
+    "premise": 0,
+    "hypothesis": 0,
+    "lang_abv": 0,
+    "language": 0
+  }
+}
